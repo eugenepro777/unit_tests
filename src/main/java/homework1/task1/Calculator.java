@@ -4,7 +4,7 @@ package homework1.task1;
 public class Calculator {
 
 
-    public double calculateDiscount(double purchaseAmount, double discountAmount) {
+    public static double calculateDiscount(double purchaseAmount, double discountAmount) {
         return purchaseAmount - purchaseAmount * (discountAmount / 100);
     }
 
