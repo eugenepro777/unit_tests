@@ -1,6 +1,6 @@
 package homework1.task2;
 
-public abstract class Product implements Comparable<Product> {
+public class Product implements Comparable<Product> {
     private Integer cost;
     private String productName;
 
