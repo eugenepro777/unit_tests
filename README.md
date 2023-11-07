@@ -17,3 +17,45 @@
 Напишите тесты для проверки корректности работы метода getMostExpensiveProduct.** 
 **Напишите тесты для проверки корректности работы метода sortProductsByPrice (проверьте правильность сортировки).
 Используйте класс Product для создания экземпляров продуктов и класс Shop для написания методов сортировки и тестов.**
+
+# Урок 2. Знакомство с тестовыми фреймворками
+## Задание 1.
+
+**Проект Vehicle. Написать следующие тесты с использованием JUnit5:**
+
+- **Проверить, что экземпляр объекта [Car](src/main/java/homework2/Car.java) также является экземпляром
+транспортного средства (используя оператор instanceof).**
+
+- **Проверить, что объект [Car](src/main/java/homework2/Car.java) создается с 4-мя колесами.**
+
+- **Проверить, что объект [Motorcycle](src/main/java/homework2/Motorcycle.java) создается с 2-мя колесами.**
+
+- **Проверить, что объект [Car](src/main/java/homework2/Car.java) развивает скорость 60 в режиме тестового
+вождения (используя метод testDrive()).**
+
+- **Проверить, что объект [Motorcycle](src/main/java/homework2/Motorcycle.java) развивает скорость 75 в режиме
+тестового вождения (используя метод testDrive()).**
+
+- **Проверить, что в режиме парковки (сначала testDrive, потом park, т.е. эмуляция движения транспорта) машина
+останавливается (speed = 0).**
+
+- **Проверить, что в режиме парковки (сначала testDrive, потом park, т.е. эмуляция движения транспорта) мотоцикл
+останавливается (speed = 0).**
+
+**В этом проекте, вы будете работать с проектом ""[Vehicle](src/main/java/homework2/Vehicle.java)"", который представляет
+собой иерархию классов, включающую абстрактный базовый класс ""[Vehicle](src/main/java/homework2/Vehicle.java)"" и два
+его подкласса ""[Car](src/main/java/homework2/Car.java)"" и ""[Motorcycle](src/main/java/homework2/Motorcycle.java)"".**
+
+**Базовый класс ""[Vehicle](src/main/java/homework2/Vehicle.java)"" содержит абстрактные методы ""testDrive()"" и
+""park()"", а также поля ""company"", ""model"", ""yearRelease"", ""numWheels"" и ""speed"".**
+
+**Класс ""[Car](src/main/java/homework2/Car.java)"" расширяет ""[Vehicle](src/main/java/homework2/Vehicle.java)"" 
+и реализует его абстрактные методы.
+При создании объекта ""[Car](src/main/java/homework2/Car.java)"", число колес устанавливается в 4, а скорость в 0. 
+В методе ""testDrive()"" скорость устанавливается на 60, а в методе ""park()"" - обратно в 0.**
+
+**Класс ""[Motorcycle](src/main/java/homework2/Motorcycle.java)"" также расширяет
+""[Vehicle](src/main/java/homework2/Vehicle.java)"" и реализует его абстрактные методы. 
+При создании объекта ""[Motorcycle](src/main/java/homework2/Motorcycle.java)"", число колес устанавливается в 2,
+а скорость в 0. 
+В методе ""testDrive()"" скорость устанавливается на 75, а в методе ""park()"" - обратно в 0.**

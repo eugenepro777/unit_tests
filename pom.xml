@@ -18,6 +18,25 @@
             <version>3.24.2</version> <!-- Укажите актуальную версию AssertJ -->
             <scope>test</scope>
         </dependency>
+
+        <!--        Для использования JUnit Jupiter (JUnit 5)
+        в ваших тестах в Java необходимо добавить соответствующую
+        зависимость. JUnit Jupiter - это фреймворк
+        для написания тестов в Java.-->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
+            <version>5.9.2</version> <!-- Укажите актуальную версию JUnit Jupiter -->
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-params</artifactId>
+            <version>5.9.2</version> <!-- Укажите актуальную версию JUnit Jupiter Params -->
+            <scope>test</scope>
+        </dependency>
+
     </dependencies>
 
     <properties>
