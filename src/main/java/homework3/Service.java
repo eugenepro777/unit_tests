@@ -1,6 +1,6 @@
 package homework3;
 
-public class Main {
+public class Service {
 
     // Метод проверяет, является ли целое число записанное в переменную n, чётным (true) либо нечётным (false).
     public boolean isEvenOddNumber(int n) {
