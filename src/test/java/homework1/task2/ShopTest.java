@@ -21,6 +21,7 @@ public class ShopTest {
 
     }
 
+//    метод для создания списка продуктов
     static List<Product> getTestListProducts() {
 
         Product productA = new Product();
@@ -49,6 +50,7 @@ public class ShopTest {
         return productList;
     }
 
+//    метод перемешивает продукты в нашем списке
     static List<Product> getShuffleListProducts(List<Product> productList) {
         Collections.shuffle(productList);
         return productList;

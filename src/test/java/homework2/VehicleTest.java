@@ -9,6 +9,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class VehicleTest {
 
+//    класс служит для проверки методов класса Vehicle
     private Car car;
     private Motorcycle motorcycle;
 
@@ -16,7 +17,12 @@ class VehicleTest {
     void setUp() {
         car = new Car("Bentley", "Continental GT", 2019);
         motorcycle = new Motorcycle("Honda", "GL1800 Gold Wing", 2016);
+    }
 
+    @AfterEach
+    void tearDown() {
+        car = null;
+        motorcycle = null;
     }
 
     @Test
